@@ -22,6 +22,12 @@ export interface EntitySchemaIndexOptions {
     sparse?: boolean
 
     /**
+     * Builds the index in the background so that building an index an does not block other database activities.
+     * This option is only supported for mongodb database.
+     */
+    background?: boolean
+
+    /**
      * Indicates if this index must be unique or not.
      */
     unique?: boolean

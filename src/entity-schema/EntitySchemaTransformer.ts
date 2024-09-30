@@ -284,6 +284,7 @@ export class EntitySchemaTransformer {
                     name: index.name,
                     unique: index.unique === true ? true : false,
                     spatial: index.spatial === true ? true : false,
+                    background: index.background === true ? true : false,
                     fulltext: index.fulltext === true ? true : false,
                     nullFiltered: index.nullFiltered === true ? true : false,
                     parser: index.parser,
